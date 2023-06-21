@@ -1,0 +1,36 @@
+<div class="row">
+   
+        <div class="col col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card" style="width: 18rem;">
+                
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <h5>Cart</h5>
+                    </h5>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>Amount</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% carts.reverse(); %>
+                            <% carts.forEach(cart => { %>
+                                
+                                <tr>
+                                    <td><%= cart.name %></td>
+                                    <td><%= cart.price %></td>
+                                    <td><%= cart.amount %></td>
+                                    <td>OK</td>
+                                </tr>
+                            <% }) %>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+   
+</div>
